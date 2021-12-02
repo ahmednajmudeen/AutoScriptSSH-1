@@ -21,7 +21,7 @@ mkdir /var/lib/premium-script;
 echo "Enter the VPS Subdomain Hostname, if not available, please click Enter"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
-wget hhttps://raw.githubusercontent.com/ahmednajmudeen/AutoScriptSSH-1/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/ahmednajmudeen/AutoScriptSSH-1/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/ahmednajmudeen/AutoScriptSSH-1/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://raw.githubusercontent.com/ahmednajmudeen/AutoScriptSSH-1/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://raw.githubusercontent.com/ahmednajmudeen/AutoScriptSSH-1/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
